@@ -64,5 +64,20 @@
 # Update-Module Az
 
 
+# ----------------------------------------------------------------------
+# List available virtual machine images.
+
+# az vm image list
+
+# az vm image list --all --location eastus --publisher Microsoft -o table
+
+
+# -- Write the list of images published by Microsoft, and available in eastus, to a CSV file on the Desktop.
+# az vm image list --all --location eastus --publisher Microsoft | ConvertFrom-Json | Export-Csv -Path ([IO.Path]::Combine([Environment]::GetFolderPath("Desktop"), "azure-image-list.csv"))
+
+
+# -- See the details for a specific image by URN.
+# az vm image show --location eastus --urn MicrosoftWindowsDesktop:windows-11:win11-21h2-pron:22000.739.220608
+
 
 # ----------------------------------------------------------------------

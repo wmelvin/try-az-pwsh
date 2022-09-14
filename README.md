@@ -12,7 +12,7 @@ This repository contains some scripts from my experimenting with using PowerShel
 
 **az-funcs.ps1** - Contains several shared functions; dot-sourced by the other scripts.
 
-**az-snips.ps1** - Contains various PowerShell commands. The commands are commented-out. I run them in Visual Studio Code (or the PowerShell ISE) by selecting the text and pressing F8.
+**az-snips.ps1** - Contains various PowerShell commands. The commands are commented out. I run them in Visual Studio Code (or the PowerShell ISE) by selecting the text and pressing F8.
 
 
 **There are setup steps needed before the scripts can be used:**

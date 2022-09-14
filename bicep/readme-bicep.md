@@ -44,8 +44,7 @@ Copied the `template.bicep` file created by the decompile process to `create-lin
 The script `deploy-linux-vm-1.ps1` creates the resource group and then creates the deployment group using `create-linux-vm-1.bicep`. 
 
 
-### Getting the Piblic IP Address
-
+### Getting the Public IP Address
 **az vm [list-ip-addresses](https://docs.microsoft.com/en-US/cli/azure/vm?view=azure-cli-latest#az-vm-list-ip-addresses)**
 
 Given a VM named **tmp1-linux-1**, this command sets `$ip` to the public IP address:

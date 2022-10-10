@@ -180,7 +180,7 @@ function new-windows-vm($rgbase, $image, $vmsize, $location, $start_step)
 
 # ----------------------------------------------------------------------
 
-new-windows-vm "tmp1" "Win2016Datacenter" "Standard_D1_v2" "eastus" 0
+# new-windows-vm "tmp1" "Win2016Datacenter" "Standard_D1_v2" "eastus" 0
 
 
 # ##  2021-11-21: Windows 11 Desktop VM.
@@ -190,10 +190,15 @@ new-windows-vm "tmp1" "Win2016Datacenter" "Standard_D1_v2" "eastus" 0
 #     "eastus" `
 #     0
 
+##  2022-10-10: Windows 11 Desktop VM.
+$imageUrn = "MicrosoftWindowsDesktop:windows-11:win11-21h2-pron:22000.978.220910"
+new-windows-vm "tmpwin" $imageUrn "Standard_DS2_v2" "eastus" 0
+
 
 # -- Get IP address.
 # az vm list-ip-addresses -n "tmp1-win-1" -o table
 # az vm list-ip-addresses -n "tmp2-win-1" -o table
+# az vm list-ip-addresses -n "tmpwin-win-1" -o table
 
 
 # ----------------------------------------------------------------------

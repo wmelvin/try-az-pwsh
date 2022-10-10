@@ -77,7 +77,7 @@
 
 
 # -- See the details for a specific image by URN.
-# az vm image show --location eastus --urn MicrosoftWindowsDesktop:windows-11:win11-21h2-pron:22000.739.220608
+# az vm image show --location eastus --urn MicrosoftWindowsDesktop:windows-11:win11-21h2-pron:22000.978.220910
 
 
 # ----------------------------------------------------------------------

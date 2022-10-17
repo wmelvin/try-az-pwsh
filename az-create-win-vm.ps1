@@ -190,15 +190,19 @@ function new-windows-vm($rgbase, $image, $vmsize, $location, $start_step)
 #     "eastus" `
 #     0
 
-##  2022-10-10: Windows 11 Desktop VM.
-$imageUrn = "MicrosoftWindowsDesktop:windows-11:win11-21h2-pron:22000.978.220910"
-new-windows-vm "tmpwin" $imageUrn "Standard_DS2_v2" "eastus" 0
+
+# ##  2022-10-10: Windows 11 Desktop VM.
+# $imageUrn = "MicrosoftWindowsDesktop:windows-11:win11-21h2-pron:22000.978.220910"
+# new-windows-vm "tmpwin" $imageUrn "Standard_DS2_v2" "eastus" 0
+
+
+## 2022-10-17: Try the Windows 11 image with Visual Studio 2022 Community.
+$imageUrn = "MicrosoftVisualStudio:visualstudio2022:vs-2022-comm-latest-win11-n-gen2:2022.09.21"
+new-windows-vm "tmp1" $imageUrn "Standard_DS2_v2" "eastus" 0
 
 
 # -- Get IP address.
 # az vm list-ip-addresses -n "tmp1-win-1" -o table
-# az vm list-ip-addresses -n "tmp2-win-1" -o table
-# az vm list-ip-addresses -n "tmpwin-win-1" -o table
 
 
 # ----------------------------------------------------------------------

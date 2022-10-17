@@ -77,7 +77,14 @@
 
 
 # -- See the details for a specific image by URN.
+
 # az vm image show --location eastus --urn MicrosoftWindowsDesktop:windows-11:win11-21h2-pron:22000.978.220910
+
+# az vm image show --location eastus --urn MicrosoftVisualStudio:visualstudioplustools:vs-2022-pro-general-win11-m365-gen2:2022.09.30
+
+# az vm image show --location eastus --urn MicrosoftVisualStudio:visualstudio2022:vs-2022-comm-latest-ws2022:2022.09.21
+
+# az vm image show --location eastus --urn MicrosoftVisualStudio:visualstudio2022:vs-2022-comm-latest-win11-n-gen2:2022.09.21
 
 
 # ----------------------------------------------------------------------
